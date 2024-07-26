@@ -24,3 +24,10 @@ networks:
     project_network:
         external: true
 # $ docker run -d --net=host -e 'CONSUL_LOCAL_CONFIG={"skip_leave_on_interrupt": true}' consul agent -server -bind=<external ip> -retry-join=<root agent ip> -bootstrap-expect=<number of server agents>
+
+# docker network list
+# docker network create project_network
+# docker network inspect project_network
+
+#docker save -o config-service-app-1.0.0.tar config-service-app:1.0.0
+#docker load -i config-service-app-1.0.0.tar
